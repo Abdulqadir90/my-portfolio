@@ -19,11 +19,11 @@ body{
     display: flex;
     justify-content: center;
     padding: 50px;
+ 
 }
 
-.paragraph{
+.about-me{
     padding: 25px;
-    
 }
 
 .about{
@@ -34,14 +34,35 @@ body{
 
 .picture{
     border-radius: 150px;
-    width: 275px;
+    height: 300px;
+    padding: 10px;
+   
+    
     
 }
 
 #projects{
     display: flex;
-    gap: 150px;
+    justify-content: center;
+    padding: 50px;
+    gap: 100px;
    
+}
+
+.project{
+    display: inline-block;
+    
+    
+}
+
+.pic{
+    height: 200px;
+    width: 125px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
 }
 
 
