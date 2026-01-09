@@ -1,3 +1,49 @@
 *{
-    background-color: aqua;
+margin: 0;
+padding: 0;
+
 }
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#head{
+    background-color:lightblue;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#me{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.paragraph{
+    padding: 25px;
+    
+}
+
+.about{
+    margin-right: 25px;
+    /* padding: 10px; */
+
+}
+
+.picture{
+    border-radius: 150px;
+    width: 275px;
+    
+}
+
+#projects{
+    display: flex;
+    gap: 150px;
+   
+}
+
+
+
+
