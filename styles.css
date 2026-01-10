@@ -19,14 +19,14 @@ body{
 #me{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 25px;
  
 }
 
 .about-me{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 .about{
@@ -45,6 +45,7 @@ body{
 }
 
 #projects{
+    background-color: dimgray;
     display: flex;
     padding: 50px;
     gap: 50px;
@@ -68,16 +69,6 @@ body{
     gap: 5px;
 }
 
-button{
-    background-color: rgb(226, 162, 43);
-    color: white;
-}
-
-footer{
-    background-color: burlywood;
-    color: white;
-    text-align: center;
-}
 
 .links{
     list-style: none;
@@ -94,5 +85,29 @@ footer{
     padding: 50px;
 }
 
+
+button{
+    background-color: rgb(226, 162, 43);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: cadetblue;
+}
+
+footer{
+    background-color: burlywood;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* medium  devices 768px and up */
+@media (max-width: 768px) {
+
+}
 
 
