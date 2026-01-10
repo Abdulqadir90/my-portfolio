@@ -24,7 +24,9 @@ body{
 }
 
 .about-me{
-    padding: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
 }
 
 .about{
@@ -90,7 +92,6 @@ footer{
     flex-direction: column;
     width: 500px;
     padding: 50px;
-  
 }
 
 
