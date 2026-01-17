@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #326ba8;
+    --primary-color: #f4b014;
     --secondary-color: #a89432;
     --background-color: #ccdbd1;
     --border-radius: 10px;
@@ -9,8 +9,6 @@
 
 
 }
-
-
 
 *{
 margin: 0;
@@ -24,7 +22,7 @@ body{
 
 }
 
-
+/* Header only */
 
 #head{
     background-color:var(--background-color);
@@ -43,32 +41,74 @@ font-size: 50px;
 
 }
 
+.links{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    gap: 40px;
+}
+
+.links li {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.links li::after {
+    content: "";
+    display: block;
+    background-color: var(--secondary-color);
+    width: 0; 
+    /* so its starts hidden */
+    height: 2px;
+    transition: 0.5s;
+}
+
+.links li:hover::after {
+    width: 100%;
+    /* becomes fully visible on hover */
+}
+
+
+
+
+/* About me only */
+
+
 #me{
     display: flex;
-    align-items: center;
-    padding: 25px;
-}
-
-.about-me{
-    display: flex;
     justify-content: center;
-    padding: 30px;
+    align-items: center;
+    padding: var(--padding-size);
 }
 
-.about{
-    margin-right: 25px;
+#me .about-me{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+#paragraph{
+    border: 2px solid var(--primary-color);
+    padding: var(--padding-size);
+    border-radius: var(--border-radius);
+    background-color: beige;
+    width: 50%
 }
 
 .picture{
     border-radius: 10%;
     height: 250px;
-    padding: 20px;
+    box-shadow: var(--box-shadow);
+
 }
 
-#paragraph{
-    border: 2px solid black;
-    padding: 20px;
-}
+
+/* Project section only */
+
+
+
+
 
 #projects{
     background-color: dimgray;
@@ -98,12 +138,6 @@ font-size: 50px;
 }
 
 
-.links{
-    list-style: none;
-    display: flex;
-    padding: 10px;
-    gap: 40px;
-}
 
 #contact{
     display: flex;
