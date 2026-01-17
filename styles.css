@@ -1,6 +1,6 @@
 :root{
     --primary-color: #f4b014;
-    --secondary-color: #a89432;
+    --secondary-color: #72716a;
     --background-color: #ccdbd1;
     --border-radius: 10px;
     --box-shadow:  5px 5px rgb(53, 174, 234), 10px 10px beige, 15px 15px black;
@@ -18,14 +18,14 @@ font-family: 'Times New Roman', Times, serif;
 }
 
 body{
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
 
 }
 
 /* HEADER SECTION */
 
 #head{
-    background-color:var(--background-color);
+    background-color:rgb(225, 228, 221);
     padding: var(--padding-size);
     display: flex; 
     flex-direction: column;
@@ -56,7 +56,6 @@ font-size: 50px;
 .links li::after {
     content: "";
     display: block;
-    background-color: var(--secondary-color);
     width: 0; 
     /* so its starts hidden */
     height: 2px;
@@ -76,8 +75,9 @@ font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--padding-size);
     gap: 40px;
+    margin-top: 50px;
+    padding-bottom: 50px;
    
 }
 
@@ -101,6 +101,7 @@ font-size: 50px;
     height: 250px;
     box-shadow: var(--box-shadow);
     transition: transform 0.4s ease;
+    width: 125px;
 }
 
 .picture:hover {
@@ -202,7 +203,8 @@ so when the fiter property changes animate it smoothly over 0.5 secs */
    .phone-number --> target the child inside it */
 
 
-.form input, .form textarea {
+.form input, 
+.form textarea {
     padding: 10px;
     border: 1px solid rgb(64, 134, 239);
     border-radius: var(--border-radius);
@@ -211,7 +213,8 @@ so when the fiter property changes animate it smoothly over 0.5 secs */
 }
 
 
-.form input:focus, .form textarea:focus {
+.form input:focus, 
+.form textarea:focus {
     border-color: var(--primary-color);
     box-shadow: 0 5px 15px rgba(5, 44, 239, 0.1);
 }
@@ -219,7 +222,8 @@ so when the fiter property changes animate it smoothly over 0.5 secs */
 /* when you click inside the input, the body changes color and the shadow should be smooth */
 
 
-.form h2, .form p {
+.form h2, 
+.form p {
     text-align: center;
     font-size: 30px;
 }
@@ -228,7 +232,7 @@ so when the fiter property changes animate it smoothly over 0.5 secs */
 
 
 button {
-    background-color: rgb(226, 162, 43);
+    background-color: rgb(48, 84, 230);
     border-radius: 20px;
     color: white;
     cursor: pointer;
@@ -242,12 +246,12 @@ button {
 
 
 button:hover{
-    background-color: var(--background-color);
+    background-color: rgb(46, 182, 55);
     transform: translateY(-5px);
     /* moves the button up, like its lifted
     negative Y -> moves up (-5px)
     positive Y moves down (5px) */
-    box-shadow: 0 5px 35px rgba(5, 44, 239, 3);
+    box-shadow: 0 5px 35px rgba(5, 44, 300, 3);
 }
 /* when hovering over submit button it slightly moves up the y axis by 5 pixels*/
 
@@ -256,13 +260,13 @@ button:hover{
 /* FOOTER SECTION */
 
 footer{
-    background-color: burlywood;
+    background-color: rgb(21, 70, 218);
     border-radius: var(--border-radius);
     color: white;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 15px;
     padding: var(--padding-size);
-    margin-top: 40px;
+    margin-top: 20px;
 
 }
 
