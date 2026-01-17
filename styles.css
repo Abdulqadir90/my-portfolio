@@ -60,13 +60,15 @@ font-size: 50px;
     width: 0; 
     /* so its starts hidden */
     height: 2px;
-    transition: 0.5s;
+    transition: width 0.5s ease;
 }
 
 .links li:hover::after {
     width: 100%;
     /* becomes fully visible on hover */
 }
+
+
 
 
 
@@ -79,6 +81,7 @@ font-size: 50px;
     justify-content: center;
     align-items: center;
     padding: var(--padding-size);
+    gap: 40px;
    
 }
 
@@ -101,8 +104,14 @@ font-size: 50px;
     border-radius: 10%;
     height: 250px;
     box-shadow: var(--box-shadow);
-
+    transition: transform 0.4s ease;
 }
+
+.picture:hover {
+    transform: scale(1.5);
+}
+
+/* when hovering over picture it enlarges by 1.5 */
 
 
 /* Project section only */
@@ -210,12 +219,15 @@ button:hover{
 
 
 
+/* Footer only */
+
 footer{
     background-color: burlywood;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: var(--padding-size);
+    margin-top: 20px;
 }
 
 /* medium  devices 768px and up */
