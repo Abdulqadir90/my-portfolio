@@ -39,7 +39,36 @@ color: black;
 text-shadow: var(--box-shadow);
 font-size: 50px;
 
+animation: slideDown 1s ease forwards;
+
 }
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* keyframes - fedines an animation
+slideDown - name of the animation we will reference later on the element.
+
+from state
+
+opacity: 0 - the element start but cant see it yet
+transform: translateY(-40px); - the element start 40px above its normal position,
+nagativeY movies it upwards
+
+to state
+
+opacity: 1; -> by the end of the animation the element is visible
+transform: translateY(0); -> moves to its natural position
+*/
+
 
 .links{
     list-style: none;
@@ -55,6 +84,7 @@ font-size: 50px;
 
 .links li::after {
     content: "";
+    background-color: black;
     display: block;
     width: 0; 
     /* so its starts hidden */
@@ -194,13 +224,22 @@ textarea{
 /* applies a blur effect to the text, blurred by 5px.
 so when the fiter property changes animate it smoothly over 0.5 secs */
 
-
 .phone:hover
 .phone-number{
    filter: blur(0);
 }
 /* .phone:hover --> when you hover over the parent element
    .phone-number --> target the child inside it */
+
+.email-address {
+    filter: blur(5px);
+    transition: blur 0.5s ease;
+}
+
+.email1:hover
+.email-address{
+      filter: blur(0);
+}
 
 
 .form input, 
@@ -260,7 +299,7 @@ button:hover{
 /* FOOTER SECTION */
 
 footer{
-    background-color: rgb(21, 70, 218);
+    background-color: rgb(124, 205, 243);
     border-radius: var(--border-radius);
     color: white;
     text-align: center;
