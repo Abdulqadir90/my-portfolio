@@ -162,7 +162,7 @@ font-size: 50px;
     justify-content: center;
     padding: var(--padding-size);
     background-color: white;
-    background-image: url(./ocean.jpg);
+    background-image: url(./extras/ocean.jpg);
     background-size: cover;
     /* makes it cover the entire section */
     background-position: center;
@@ -221,6 +221,7 @@ so when the fiter property changes animate it smoothly over 0.5 secs */
 
 .form h2, .form p {
     text-align: center;
+    font-size: 30px;
 }
 
 /* centers contact container in the middle */
