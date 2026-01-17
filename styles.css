@@ -5,7 +5,7 @@
     --border-radius: 10px;
     --box-shadow:  5px 5px forestgreen, 10px 10px beige, 15px 15px black;
     --buttons-hover: #2db357;
-    --padding-size: 20px;
+    --padding-size: 10px;
 
 
 }
@@ -130,7 +130,7 @@ font-size: 50px;
 
 .project:hover {
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    transform:scale(0.5)
+    transform: scale(0.5)
 
 }
 
@@ -140,18 +140,12 @@ font-size: 50px;
     border-radius: 50%;
 }
 
+.project h3{
+    margin-bottom: 20px;
+}
+
 
 /* contact section */
-
-
-.form{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    width: 50%;
-    border-radius: var(--border-radius);
-    padding: var(--padding-size);
-}
 
 #contact{
     display: flex;
@@ -167,27 +161,54 @@ font-size: 50px;
     padding: var(--padding-size);
     border-radius: var(--border-radius);
     width: 50%;
-    gap: 10px;
+    gap: 20px;
     box-shadow: 0 5px 15px rgba(5, 44, 239, 0.1);
 }
 
-
 textarea{
-    padding: 30px;
+    height: 150px;
+}
+
+.form input, .form textarea {
+    padding: 10px;
+    border: 1px solid rgb(238, 48, 15);
+    border-radius: var(--border-radius);
+    font-size: 1.5rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 
+.form input:focus, .form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(5, 44, 239, 0.1);
+}
 
-button{
+/* when you click inside the input, the boder changes color and the shadow should be smooth */
+
+
+.form h2, .form p {
+    text-align: center;
+}
+
+
+button {
     background-color: rgb(226, 162, 43);
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
     cursor: pointer;
+    padding: var(--padding-size);
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+
 }
 
 button:hover{
-    background-color: cadetblue;
+    background-color: var(--background-color);
+    transform: scale(1.5);
 }
+/* when hovering over submit button it enlarges by 1.5 */
+
+
 
 footer{
     background-color: burlywood;
