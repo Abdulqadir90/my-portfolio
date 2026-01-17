@@ -3,7 +3,7 @@
     --secondary-color: #a89432;
     --background-color: #ccdbd1;
     --border-radius: 10px;
-    --box-shadow:  5px 5px forestgreen, 10px 10px beige, 15px 15px black;
+    --box-shadow:  5px 5px rgb(53, 174, 234), 10px 10px beige, 15px 15px black;
     --buttons-hover: #2db357;
     --padding-size: 10px;
 
@@ -22,7 +22,7 @@ body{
 
 }
 
-/* Header only */
+/* HEADER SECTION */
 
 #head{
     background-color:var(--background-color);
@@ -45,7 +45,7 @@ font-size: 50px;
     list-style: none;
     display: flex;
     padding: 10px;
-    gap: 40px;
+    gap: 50px;
 }
 
 .links li {
@@ -69,11 +69,7 @@ font-size: 50px;
 }
 
 
-
-
-
-
-/* About me only */
+/* MAIN SECTION */
 
 
 #me{
@@ -93,11 +89,11 @@ font-size: 50px;
 
 
 #paragraph{
-    border: 2px solid var(--primary-color);
+    border: 2px dotted black;
     padding: var(--padding-size);
     border-radius: var(--border-radius);
     background-color: beige;
-    width: 50%
+    width: 50%;
 }
 
 .picture{
@@ -114,7 +110,7 @@ font-size: 50px;
 /* when hovering over picture it enlarges by 1.5 */
 
 
-/* Project section only */
+/* PROJECT SECTION */
 
 
 #projects{
@@ -153,8 +149,13 @@ font-size: 50px;
     margin-bottom: 20px;
 }
 
+.my-projects{
+    font-size: 30px;
+    text-align: start;
+}
 
-/* contact section */
+
+/* CONTACT SECTION */
 
 #contact{
     display: flex;
@@ -179,13 +180,31 @@ font-size: 50px;
     box-shadow: 0 5px 15px rgba(5, 44, 239, 0.1);
 }
 
+    /* box-shadow -> makes the form come out alive */
+
 textarea{
     height: 150px;
 }
 
+.phone-number{
+    filter: blur(5px);
+    transition: blur 0.5s ease;
+}
+/* applies a blur effect to the text, blurred by 5px.
+so when the fiter property changes animate it smoothly over 0.5 secs */
+
+
+.phone:hover
+.phone-number{
+   filter: blur(0);
+}
+/* .phone:hover --> when you hover over the parent element
+   .phone-number --> target the child inside it */
+
+
 .form input, .form textarea {
     padding: 10px;
-    border: 1px solid rgb(238, 48, 15);
+    border: 1px solid rgb(64, 134, 239);
     border-radius: var(--border-radius);
     font-size: 1.5rem;
     transition: border-color 0.3s, box-shadow 0.3s;
@@ -197,7 +216,7 @@ textarea{
     box-shadow: 0 5px 15px rgba(5, 44, 239, 0.1);
 }
 
-/* when you click inside the input, the boder changes color and the shadow should be smooth */
+/* when you click inside the input, the body changes color and the shadow should be smooth */
 
 
 .form h2, .form p {
@@ -215,10 +234,11 @@ button {
     padding: var(--padding-size);
     font-size: 20px;
     transition: background-color 0.3s, transform 0.3s box-shadow 0.3s;
-    /* telling the browser when these properties change animate them smoothly
-    with over 0.3 seconds instead of changing them instantly.  */
 
 }
+  /* telling the browser when these properties change animate them smoothly
+    with over 0.3 seconds instead of changing them instantly.  */
+
 
 button:hover{
     background-color: var(--background-color);
@@ -232,7 +252,7 @@ button:hover{
 
 
 
-/* Footer only */
+/* FOOTER SECTION */
 
 footer{
     background-color: burlywood;
@@ -250,6 +270,4 @@ footer{
 
 }
 
-
-/* keyframes */
 
