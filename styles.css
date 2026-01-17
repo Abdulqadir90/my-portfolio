@@ -79,6 +79,7 @@ font-size: 50px;
     justify-content: center;
     align-items: center;
     padding: var(--padding-size);
+   
 }
 
 #me .about-me{
@@ -107,14 +108,12 @@ font-size: 50px;
 /* Project section only */
 
 
-
-
-
 #projects{
-    background-color: dimgray;
+    background-color: #3c5d96;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;
+    padding: var(--padding-size);
     gap: 50px;
 
 }
@@ -123,32 +122,53 @@ font-size: 50px;
     background-color: white;
     text-align: center;
     width: 200px;
+    border-radius: var(--border-radius);
+    padding: var(--padding-size);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.project:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transform:scale(0.5)
+
 }
 
 .pic{
-    height: 200px;
-    border-radius: 80px;
-    
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
 }
+
+
+/* contact section */
+
 
 .form{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    width: 50%;
+    border-radius: var(--border-radius);
+    padding: var(--padding-size);
 }
-
-
 
 #contact{
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: var(--padding-size);
+    background-color: white;
 }
 
 
 .form {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-size);
+    border-radius: var(--border-radius);
     width: 50%;
     gap: 10px;
+    box-shadow: 0 5px 15px rgba(5, 44, 239, 0.1);
 }
 
 
