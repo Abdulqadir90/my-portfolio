@@ -54,13 +54,13 @@ animation: slideDown 1s ease forwards;
     }
 }
 
-/* keyframes - fedines an animation
-slideDown - name of the animation we will reference later on the element.
+/* keyframes -> defines an animation
+slideDown -> name of the animation we will reference later on the element.
 
 from state
 
-opacity: 0 - the element start but cant see it yet
-transform: translateY(-40px); - the element start 40px above its normal position,
+opacity: 0 -> the element starts but you cant see it yet
+transform: translateY(-40px); -> the element start 40px above its normal position,
 nagativeY movies it upwards
 
 to state
@@ -118,13 +118,31 @@ transform: translateY(0); -> moves to its natural position
 }
 
 
+/* keyframes are like steps that tell the browser how an element should animate over time */
+@keyframes popIn {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.30);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 #paragraph{
     border: 2px dotted black;
     padding: var(--padding-size);
     border-radius: var(--border-radius);
     background-color: beige;
     width: 50%;
+    animation: popIn 1.5s ease forwards;
 }
+
 
 .picture{
     border-radius: 10%;
