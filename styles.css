@@ -143,7 +143,7 @@ transform: translateY(0); -> moves to its natural position
     border: 2px solid black;
     padding: var(--padding-size);
     border-radius: var(--border-radius);
-    background-color: beige;
+    background-color: white;
     width: 50%;
     animation: popIn 1.5s ease forwards;
 }
@@ -234,7 +234,12 @@ transform: translateY(0); -> moves to its natural position
     box-shadow: 0 5px 15px rgba(5, 44, 239, 0.1);
 }
 
-    /* box-shadow -> makes the form come out alive */
+/* box-shadow -> makes the form come out alive */
+
+.form label{
+    font-weight: bold;
+    font-size: 1rem;
+}
 
 textarea{
     height: 150px;
@@ -298,11 +303,15 @@ button {
     border-radius: 20px;
     color: white;
     cursor: pointer;
-    padding: var(--padding-size);
-    font-size: 20px;
+    padding: 5px 20px;
+    font-size: 15px;
+    width: auto;
+    /* ensures the button doesn’t stretch to match the form’s width. */
+    align-self: center;
     transition: background-color 0.3s, transform 0.3s box-shadow 0.3s;
 
 }
+
   /* telling the browser when these properties change animate them smoothly
     with over 0.3 seconds instead of changing them instantly.  */
 
@@ -328,13 +337,21 @@ footer{
     text-align: center;
     font-size: 15px;
     padding: var(--padding-size);
-    margin-top: 20px;
 
 }
 
 /* medium  devices 768px and up */
+
 @media (max-width: 768px) {
+    #me{
+          flex-direction: column;
+          text-align: center;
+    }
 
 }
+/* when the screen is 768px or smaller, stack them vertically
+
+so desktop = row (by default)
+mobile = column (we are overiding this)*/
 
 
